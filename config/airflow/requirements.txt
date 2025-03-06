@@ -1,0 +1,15 @@
+# Dépendances de base d'Airflow
+apache-airflow-providers-postgres
+apache-airflow-providers-redis
+apache-airflow-providers-amazon
+apache-airflow-providers-http
+apache-airflow-providers-docker
+apache-airflow-providers-mongo
+apache-airflow-providers-apache-spark
+
+# Dépendances pour PostgreSQL et Redis
+psycopg2-binary
+redis
+
+# Dépendances pour MinIO et S3
+boto3

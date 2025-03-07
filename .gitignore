@@ -177,7 +177,4 @@ cython_debug/
 **/.idea
 .idea
 
-/src/architect/
-/src/resources/
-
 .cic_bi/

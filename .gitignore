@@ -179,3 +179,5 @@ cython_debug/
 
 /src/architect/
 /src/resources/
+
+.cic_bi/

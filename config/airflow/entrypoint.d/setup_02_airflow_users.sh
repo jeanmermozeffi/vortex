@@ -24,4 +24,4 @@ else
 fi
 
 # Lancer le webserver
-exec airflow webserver
+airflow webserver -D

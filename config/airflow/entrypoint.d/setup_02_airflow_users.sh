@@ -14,7 +14,7 @@ if [ "$USER_EXISTS" -eq "0" ]; then
     echo "Création de l'utilisateur admin..."
     airflow users create \
         --username "admin" \
-        --password "admin" \
+        --password "#Admin123" \
         --firstname "Effi" \
         --lastname "Jean Mermoz" \
         --role "Admin" \
@@ -24,4 +24,4 @@ else
 fi
 
 # Lancer le webserver
-airflow webserver -D
+# airflow webserver -D

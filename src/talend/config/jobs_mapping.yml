@@ -1,5 +1,5 @@
 jobs:
-  jAlimentationBDD: "/opt/airflow/src/talend/jobs/jAlimentationBDD_0.1/jAlimentationBDD/jAlimentationBDD_run.sh"
-  jChargeDWH: "/opt/airflow/src/talend/jobs/jChargeDWH/jChargeDWH_run.sh"
-  jExportData: "/opt/airflow/src/talend/jobs/jExportData/jExportData_run.sh"
-  jImportData: "/opt/airflow/src/talend/jobs/jImportData/jImportData_run.sh"
+  jAlimentationBDD: "/home/cicbi/vortex/src/talend/jobs/jAlimentationBDD_0.1/jAlimentationBDD/jAlimentationBDD_run.sh"
+  jChargeDWH: "/home/cicbi/vortex/src/talend/jobs/jChargeDWH/jChargeDWH_run.sh"
+  jExportData: "/home/cicbi/vortex/src/talend/jobs/jExportData/jExportData_run.sh"
+  jImportData: "/home/cicbi/vortex/src/talend/jobs/jImportData/jImportData_run.sh"

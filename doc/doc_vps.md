@@ -85,7 +85,7 @@ Host srv-kafka
 ssh-copy-id -i ~/.ssh/your_private_key -o Port=22023 user@160.154.95.33
 ssh-copy-id -i ~/.ssh/your_private_key -o Port=22024 user@160.154.95.33
 ssh-copy-id -i ~/.ssh/your_private_key -o Port=22025 user@160.154.95.33
-ssh-copy-id -i ~/.ssh/your_private_key -o Port=10033 cicbi@160.155.224.98
+ssh-copy-id -i ~/.ssh/your_private_key -o Port=10033 user@160.155.224.98
 ```
 
 ## Test de base : se connecter via SSH
@@ -94,6 +94,9 @@ ssh -i ~/.ssh/your_private_key -o Port=10033 user@160.155.224.98
 ```
 
 ## Connecter avec :
+```bbash
+ssh srv-airflow-talend
+```
 ```bash
 ssh srv-postgresql
 ```
@@ -137,25 +140,25 @@ sudo apt update && sudo apt upgrade -y
 
 ```bash
 # 1. Créer l'utilisateur
-sudo adduser cicbi
+sudo adduser username
 ```
 
 ```bash
 # 2. Ajouter aux sudoers
-sudo usermod -aG sudo cicbi
+sudo usermod -aG sudo username
 ```
 
 ```bash
 # 3. Créer le dossier SSH et copier la clé
-sudo mkdir -p /home/cicbi/.ssh
-sudo cp /home/user/.ssh/authorized_keys /home/cicbi/.ssh/
+sudo mkdir -p /home/username/.ssh
+sudo cp /home/user/.ssh/authorized_keys /home/username/.ssh/
 ```
 
 ```bash
 # 4. Fixer les droits
-sudo chown -R cicbi:cicbi /home/cicbi/.ssh
-sudo chmod 700 /home/cicbi/.ssh
-sudo chmod 600 /home/cicbi/.ssh/authorized_keys
+sudo chown -R username:username /home/cicbi/.ssh
+sudo chmod 700 /home/username/.ssh
+sudo chmod 600 /home/username/.ssh/authorized_keys
 ```
 
 ## Notes supplémentaires
